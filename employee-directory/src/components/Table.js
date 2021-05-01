@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Table (props) {
-    return <table className="table">
+    return <table className="table m-3">
          <thead>
         <tr>
           <th scope="col">Image</th>
@@ -14,7 +14,7 @@ function Table (props) {
       <tbody>
         {props.result.results.map(employee => (
           <tr key={employee.name.first}>
-            <td className="name"><img src={employee.picture.thumbnail}></img></td>
+            <td className="name"><img src={employee.picture.thumbnail} alt="employee-pic"></img></td>
             <td className="name">{employee.name.first} {employee.name.last}</td>
             <td className="name">{employee.email}</td>
             <td className="name">{employee.phone}</td>
