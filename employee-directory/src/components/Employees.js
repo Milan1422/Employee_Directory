@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { Component } from "react";
+import Header from "./Header";
+import Search from "./Search";
+import Wrapper from "./Wrapper";
+import Table from "./Table";
 
-function Employees () {
+class Employees extends Component {
+  
+    render() {
     return (
-        <div>
-            <h1>Employee Directory</h1>
-            <h3>Find Your Employees Here!</h3>
-        </div>
-    )
+      <div>
+        <Wrapper/>
+        <Header/>
+        <Search/>
+        <Table/>
+
+      </div>
+    );
+  }
 }
 
 export default Employees;
